@@ -1,6 +1,0 @@
-class Shop {
-    constructor(id){
-        
-    }
-
-}

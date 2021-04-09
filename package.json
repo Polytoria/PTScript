@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "https://github.com/Polytoria/PTScript.git",
   "author": "Sylack <ilarumbgim1@educacion.navarra.es>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/node-fetch": "^2.5.10",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }
