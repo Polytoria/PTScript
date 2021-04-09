@@ -1,0 +1,9 @@
+{
+  "name": "pt-script",
+  "version": "1.0.0",
+  "description": "Polytoria JavaScript API Wrapper",
+  "main": "index.js",
+  "repository": "https://github.com/Polytoria/PTScript.git",
+  "author": "Sylack <ilarumbgim1@educacion.navarra.es>",
+  "license": "MIT"
+}

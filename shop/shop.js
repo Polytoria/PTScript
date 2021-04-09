@@ -1,0 +1,6 @@
+class Shop {
+    constructor(id){
+        
+    }
+
+}
