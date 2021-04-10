@@ -1,6 +1,7 @@
 {
   "name": "@polytoria/shop",
-  "version": "1.4.0",
+  "description": "Polytoria official shop wrapper.",
+  "version": "1.4.1",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
