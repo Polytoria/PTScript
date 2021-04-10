@@ -1,6 +1,6 @@
 import axios from "axios";
 
-class User {
+module.exports = class User {
     public id:number;
     constructor(id){
         this.id = id;
@@ -37,4 +37,3 @@ class User {
     }
 }
 
-export default User;
