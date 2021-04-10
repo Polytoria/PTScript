@@ -6,7 +6,7 @@ The user API is a really good way to get and handle data from the polytoria API.
 **Static**
 This function returns user information through the Username.
 ```js
-const {default: User} = require('@polytoria/users');
+const User = require('@polytoria/users');
 
 User.getFromUsername('NodeJS').then((result)=>{
     console.log(result.Username); // NodeJS
