@@ -1,0 +1,10 @@
+{
+  "name": "@polytoria/shop",
+  "version": "1.2.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.14.37",
+    "axios": "^0.21.1"
+  }
+}
