@@ -7,8 +7,7 @@
   "author": "Sylack <ilarumbgim1@educacion.navarra.es>",
   "license": "MIT",
   "dependencies": {
-    "@types/node-fetch": "^2.5.10",
-    "node-fetch": "^2.6.1"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "prettier": "^2.2.1"
