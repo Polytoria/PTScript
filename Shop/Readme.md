@@ -88,3 +88,4 @@ const Owners = shop.getOwners(9123);
 Owners.then((ownerData)=>{
     console.log(OwnerData); // Returns the JSON!
 })
+```
