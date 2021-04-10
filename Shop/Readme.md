@@ -4,8 +4,7 @@ Require the shop wrapper.
 const shop = require("polytoria/shop");
 ```
 
-Now lets fetch the items.
-
+Fetch catalog pages:
 ```js
 const AllItems = shop.fetchCatalog(1); // First page.
 ```
@@ -62,5 +61,30 @@ Allitems.then((data) => {
   });
 });
 ```
-This code will log all the item names like this:
-<img src="../assets/Nice.png">
+
+This will display all the item names on page 1.
+
+#### API Wrapper docs.
+
+We have different functions on the api wrapper.
+
+`fetchItem(itemID);` Returns JSON with item information.
+`getSales(ItemID);` Returns JSON of the item sales, including time, purchaser and some other good information.
+`getOwners(itemID, limit, page )` Fetches all owners of an item and returns JSON.
+
+By default `getOwners` has the limit set to 20, and page 1.
+
+##### Promises.
+All the functions are promised based, thus:
+
+```js
+const shop = require('...');
+console.log(shop.getOwners(9123)); // WONT WORK!
+
+/**
+ * This will work!
+*/
+const Owners = shop.getOwners(9123);
+Owners.then((ownerData)=>{
+    console.log(OwnerData); // Returns the JSON!
+})
