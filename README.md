@@ -67,4 +67,4 @@ Allitems.then((data) => {
 });
 ```
 This code will log all the item names like this:
-<img src="assets/nice.png">
+<img src="assets/Nice.png">
