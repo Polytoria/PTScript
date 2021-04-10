@@ -7,7 +7,7 @@ class User {
     }
     public async getUserData(){
         const promise = axios.get(`https://api.polytoria.com/users/user?id=${this.id}`);
-        const promiseData : Object = promise.then((Response)=>Response.data)
+        const promiseData  = promise.then((Response)=>Response.data)
         return promiseData;
     }
     /**
@@ -17,16 +17,18 @@ class User {
      */
     public async getFriends(){
         const promise = axios.get(`https://api.polytoria.com/users/friends?id=${this.id}`);
-        const promiseData : Object = promise.then((Response)=>Response.data)
+        const promiseData  = promise.then((Response)=>Response.data)
         return promiseData;
     }
     public async getAppreance(){
         const promise = axios.get(`https://api.polytoria.com/users/getappearance?id=${this.id}`);
-        const promiseData : Object = promise.then((Response)=>Response.data)
+        const promiseData = promise.then((Response)=>Response.data)
         return promiseData;
     }
     public async getUsername(){
-
+        const promise = axios.get(`https://api.polytoria.com/users/user?id=${this.id}`);
+        const promiseData  = promise.then((Response)=>Response.data.Username)
+        return promiseData;
     }
     public static async getFromUsername(username:string){
         const promise = axios.get(`https://api.polytoria.com/users/getbyusername?username=${username}`);
@@ -34,3 +36,5 @@ class User {
         return promiseData;
     }
 }
+
+export default User;
