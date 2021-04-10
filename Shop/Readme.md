@@ -55,9 +55,7 @@ But much more bigger. Just handle the data like this:
 
 ```js
 Allitems.then((data) => {
-  data.foreach();
-  console.log(data.name);
-  array.forEach((asset) => {
+  data.forEach((asset) => {
     console.log("Asset name:" + asset.name);
   });
 });
