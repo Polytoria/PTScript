@@ -1,0 +1,13 @@
+{
+  "name": "@polytoria/users",
+  "version": "1.0.0",
+  "description": "An API for users.",
+  "main": "index.js",
+  "author": "Shigero",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/node": "^14.14.37",
+    "axios": "^0.21.1"
+  }
+}

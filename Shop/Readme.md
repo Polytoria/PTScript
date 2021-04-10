@@ -102,6 +102,6 @@ console.log(shop.getOwners(9123)); // WONT WORK!
  */
 const Owners = shop.getOwners(9123);
 Owners.then((ownerData) => {
-  console.log(OwnerData); // Returns the JSON!
+  console.log(ownerData); // Returns the JSON!
 });
 ```
