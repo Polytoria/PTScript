@@ -1,5 +1,12 @@
 import axios from "axios";
 module.exports = class Shop {
+  public static async latestItem(type: number) {
+    const promise = axios.get(
+      `https://api.polytoria.com/asset/catalog?type=${type}`
+    );
+    const promiseData = promise.then((data) => data.data[0]);
+    return promiseData;
+  }
   public static async getSales(itemID: number) {
     const promise = axios.get(
       `https://api.polytoria.com/asset/sales?id=${itemID}`

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@polytoria/shop@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@polytoria/shop/-/shop-1.2.0.tgz#45d0cc14069a6340670097dac1c27d97ea4177c4"
-  integrity sha512-Qg0fvcOJMDRnXpZkcYydgaVi9zV9JleIWKKvIhkuENFNs47OIoFoUAc3dNJe/mZouSGiCrjIzcUVbTCa95C8kw==
+"@polytoria/shop@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@polytoria/shop/-/shop-1.4.0.tgz#ce27bf7700582dc242407144269aef41a3223481"
+  integrity sha512-7VbUsamrVHT9Hqktk7+K17ad99bl3SdgiUbbMiKXmLXKdg2GbhkCSSkHOwFAUzku5nLsGC2j2W7m4OuMFyvCwA==
   dependencies:
     "@types/node" "^14.14.37"
     axios "^0.21.1"

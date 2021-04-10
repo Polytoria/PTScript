@@ -5,6 +5,7 @@ const shop = require("polytoria/shop");
 ```
 
 Fetch catalog pages:
+
 ```js
 const AllItems = shop.fetchCatalog(1); // First page.
 ```
@@ -68,24 +69,39 @@ This will display all the item names on page 1.
 
 We have different functions on the api wrapper.
 
-`fetchItem(itemID);` Returns JSON with item information.
-`getSales(ItemID);` Returns JSON of the item sales, including time, purchaser and some other good information.
-`getOwners(itemID, limit, page )` Fetches all owners of an item and returns JSON.
+```js
+fetchItem((itemID: number));
+```
 
-By default `getOwners` has the limit set to 20, and page 1.
+Returns JSON with item information.
 
-##### Promises.
+```js
+getSales((ItemID: number));
+```
+
+Returns JSON of the item sales, including time, purchaser and some other good information.
+
+```ts
+getOwners(itemID : number, limit : number, page : number );
+```
+
+Fetches all owners of an item and returns JSON.
+
+By default **getOwners** has the limit set to 20, and page 1.
+
+### Promises.
+
 All the functions are promised based, thus:
 
 ```js
-const shop = require('...');
+const shop = require("...");
 console.log(shop.getOwners(9123)); // WONT WORK!
 
 /**
  * This will work!
-*/
+ */
 const Owners = shop.getOwners(9123);
-Owners.then((ownerData)=>{
-    console.log(OwnerData); // Returns the JSON!
-})
+Owners.then((ownerData) => {
+  console.log(OwnerData); // Returns the JSON!
+});
 ```

@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@polytoria/shop": "^1.2.0",
+    "@polytoria/shop": "^1.4.0",
     "@types/node": "^14.14.37"
   }
 }
