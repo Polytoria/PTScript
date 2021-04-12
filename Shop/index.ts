@@ -2,14 +2,14 @@ import axios from "axios";
 module.exports = class Shop {
   public static async latestItem(type: number) {
     const promise = axios.get(
-      `https://api.polytoria.com/asset/catalog?type=${type}`
+      `https://api.polytoria.com/v1/asset/catalog?type=${type}`
     );
     const promiseData = promise.then((data) => data.data[0]);
     return promiseData;
   }
   public static async getSales(itemID: number) {
     const promise = axios.get(
-      `https://api.polytoria.com/asset/sales?id=${itemID}`
+      `https://api.polytoria.com/v1/asset/sales?id=${itemID}`
     );
     const dataPromise = promise.then((response) => response.data);
     return dataPromise;
@@ -20,14 +20,14 @@ module.exports = class Shop {
     page: number = 1
   ) {
     const promise = axios.get(
-      `https://api.polytoria.com/asset/owners?id=${itemID}&limit=${limit}&page=${page}`
+      `https://api.polytoria.com/v1/asset/owners?id=${itemID}&limit=${limit}&page=${page}`
     );
     const dataPromise = promise.then((response) => response.data);
     return dataPromise;
   }
   public static async fetchItem(id: number) {
     if (!id) throw new Error("Error you didnt add an ID.");
-    const promise = axios.get(`https://api.polytoria.com/asset/info?id=` + id);
+    const promise = axios.get(`https://api.polytoria.com/v1/asset/info?id=` + id);
 
     const dataPromise = promise.then((response) => response.data);
     return dataPromise;
