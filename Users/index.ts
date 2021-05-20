@@ -1,15 +1,21 @@
 import axios from "axios";
+//@ts-ignore It checks node types but bruh it's installed.
+interface IUser {
+    id: Number;
+}
 
-module.exports = class User {
-    public id:number;
-    constructor(id){
+class User implements IUser{
+    constructor(public id: Number){
         this.id = id;
     }
-    public async getUserData(){
-        const promise = axios.get(`https://api.polytoria.com/v1/users/user?id=${this.id}`);
-        const promiseData  = promise.then((Response)=>Response.data)
-        return promiseData;
+    public async getData(){
+        let promise = axios.get(`https://api.polytoria.com/v1/users/user?id=${this.id}`);
+        promise.then( (data) => {
+            data.data;
+            
+        }) 
     }
+
     /**
      * @type Object
      * @var this.id ID variable.
