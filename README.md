@@ -1,7 +1,2 @@
-# Polytoria API Wrapper.
+**Deprecated as of release 1.2.3.**
 
-The polytoria API wrapper is easy to use.
-
-### <a href="/Shop">Shop </a>
-
-### <a href="/Users">Users WIP </a>
